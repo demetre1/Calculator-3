@@ -1,0 +1,283 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <EditText
+        android:id="@+id/editText"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:ems="10"
+        android:gravity="end|center"
+        android:text="0"
+        android:textSize="40pt"
+
+        android:inputType="text"
+        />
+
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        >
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            >
+
+
+
+            <Button
+                android:id="@+id/Precent"
+                android:layout_width="30pt"
+                android:layout_height="30pt"
+                android:layout_weight="1"
+                android:layout_marginEnd="1pt"
+                android:onClick="Precentage"
+                android:text="%"
+                android:background="@color/teal_700"
+                />
+            <Button
+                android:id="@+id/Root"
+                android:layout_width="30pt"
+                android:layout_height="30pt"
+                android:layout_marginRight="1pt"
+                android:layout_weight="1"
+                android:onClick="RootEvent"
+                android:text="√"
+                android:background="@color/teal_700"/>
+            <Button
+                android:id="@+id/PlusMainus"
+                android:layout_width="30pt"
+                android:onClick="ConcatEvent"
+                android:layout_height="30pt"
+                android:layout_weight="1"
+                android:layout_marginRight="1pt"
+                android:background="@color/teal_700"
+                android:text="+/-"/>
+
+
+
+        </TableRow>
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+
+           >
+
+            <Button
+
+                android:id="@+id/seven"
+                android:layout_width="30pt"
+                android:layout_height="30pt"
+                android:background="@color/green"
+                android:layout_weight="1"
+                android:layout_marginRight="1pt"
+                android:onClick="ConcatEvent"
+                android:text="7"
+                />
+
+            <Button
+                android:id="@+id/eight"
+                android:layout_width="30pt"
+                android:layout_height="30pt"
+                android:layout_marginRight="1pt"
+                android:layout_weight="1"
+                android:background="@color/green"
+                android:onClick="ConcatEvent"
+                android:text="8"
+                 />
+            <Button
+                android:id="@+id/nine"
+                android:layout_width="30pt"
+                android:layout_height="30pt"
+
+                android:layout_weight="1"
+                android:onClick="ConcatEvent"
+                android:layout_marginRight="1pt"
+                android:background="@color/green"
+                android:text="9"/>
+            <Button
+                android:id="@+id/multiply"
+                android:onClick="MathEvents"
+                android:layout_width="30pt"
+                android:layout_height="30pt"
+                android:layout_marginRight="1pt"
+                android:layout_weight="1"
+                android:background="@color/teal_700"
+                android:text="*"/>
+
+
+
+        </TableRow>
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            >
+
+            <Button
+                android:id="@+id/four"
+                android:layout_width="30pt"
+                android:layout_height="30pt"
+                android:layout_marginRight="1pt"
+                android:layout_weight="1"
+                android:background="@color/green"
+                android:onClick="ConcatEvent"
+                android:text="4"
+                tools:ignore="TextContrastCheck" />
+            <Button
+                android:id="@+id/five"
+                android:layout_width="30pt"
+                android:layout_height="30pt"
+                android:layout_weight="1"
+                android:onClick="ConcatEvent"
+                android:background="@color/green"
+                android:layout_marginRight="1pt"
+                android:text="5"/>
+            <Button
+                android:id="@+id/six"
+                android:layout_width="30pt"
+                android:layout_height="30pt"
+                android:background="@color/green"
+                android:onClick="ConcatEvent"
+                android:layout_weight="1"
+                android:layout_marginRight="1pt"
+
+                android:text="6"/>
+            <Button
+                android:id="@+id/Minus"
+                android:layout_width="30pt"
+                android:layout_height="30pt"
+                android:layout_marginRight="1pt"
+                android:onClick="MathEvents"
+                android:layout_weight="1"
+                android:background="@color/Red"
+                android:text="-"/>
+
+
+
+        </TableRow>
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            >
+
+            <Button
+                android:id="@+id/one"
+                android:layout_width="30pt"
+                android:layout_height="30pt"
+                android:layout_weight="1"
+                android:onClick="ConcatEvent"
+                android:layout_marginRight="1pt"
+                android:background="@color/green"
+                android:text="1"/>
+            <Button
+                android:id="@+id/two"
+                android:layout_width="30pt"
+                android:layout_height="30pt"
+                android:background="@color/green"
+                android:layout_weight="1"
+                android:onClick="ConcatEvent"
+                android:layout_marginRight="1pt"
+                android:text="2"/>
+            <Button
+                android:id="@+id/three"
+                android:layout_width="30pt"
+                android:layout_height="30pt"
+                android:onClick="ConcatEvent"
+                android:layout_weight="1"
+                android:background="@color/green"
+                android:layout_marginRight="1pt"
+
+                android:text="3"/>
+            <Button
+                android:id="@+id/Plus"
+                android:layout_width="30pt"
+                android:layout_height="30pt"
+                android:layout_marginRight="1pt"
+                android:layout_weight="1"
+                android:background="@color/green"
+
+                android:text="+"
+                android:onClick="MathEvents"/>
+
+
+
+        </TableRow>
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+           >
+
+            <Button
+                android:id="@+id/AC"
+                android:layout_width="30pt"
+                android:layout_height="30pt"
+                android:layout_weight="1"
+                android:layout_marginRight="1pt"
+                android:onClick="AC"
+                android:background="@color/blue"
+                android:text="AC"
+                />
+            <Button
+                android:id="@+id/zero"
+                android:layout_width="30pt"
+                android:layout_height="30pt"
+                android:layout_weight="1"
+                android:onClick="ConcatEvent"
+                android:background="@color/green"
+                android:layout_marginRight="1pt"
+                android:text="0"/>
+
+            <Button
+                android:id="@+id/Dot"
+                android:layout_width="30pt"
+                android:layout_height="30pt"
+                android:layout_weight="1"
+                android:layout_marginRight="1pt"
+                android:background="@color/blue"
+                android:onClick="ConcatEvent"
+                android:text="."/>
+            <Button
+                android:id="@+id/Divide"
+                android:layout_width="30pt"
+                android:layout_height="30pt"
+                android:layout_marginRight="1pt"
+                android:background="@color/Red"
+                android:layout_weight="1"
+                android:onClick="MathEvents"
+                android:text="/" />
+
+
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <Button
+                android:id="@+id/equals"
+                android:layout_width="30pt"
+                android:layout_height="30pt"
+                android:layout_marginRight="1pt"
+                android:layout_weight="1"
+                android:text="="
+                android:background="@color/teal_700"
+                android:onClick="equalEvent"/>
+
+
+
+
+
+        </TableRow>
+
+
+    </TableLayout>
+
+
+</LinearLayout>
